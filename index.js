@@ -2,7 +2,7 @@ const http = require("http");
 const express = require("express");
 const app = express();
 let port = process.env.PORT || 3000;
-app.get("/quote",(req, res) => {
+app.get("/",(req, res) => {
      res.send
      {
           const randomLines = require('random-status-lines');
