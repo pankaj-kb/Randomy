@@ -1,0 +1,19 @@
+{
+  "name": "randomy",
+  "version": "1.0.0",
+  "description": "A Simple API to Get Tweets From Naval Ravikant's How To Get Without Getting Lucky Tweet-Storm.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pankaj-kb/Randomy.git"
+  },
+  "author": "https://github.com/pankaj-kb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pankaj-kb/Randomy/issues"
+  },
+  "homepage": "https://github.com/pankaj-kb/Randomy#readme"
+}
