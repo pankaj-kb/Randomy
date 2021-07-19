@@ -6,7 +6,7 @@ app.get("/",(req, res) => {
      res.send
      {
           const randomLines = require('random-status-lines');
-          const quoteline = randomLines.generate();
+          const quoteline = randomLines.generatenaval();
           data = quoteline;
           res.end(quoteline);
      }
