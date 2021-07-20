@@ -41,7 +41,7 @@ app.get("/marcus",(req, res) => {
           const randomLines = require('random-status-lines');
           const quoteline = randomLines.generatemarcus();
           data = quoteline;
-          res.end(quoteline);
+          console.log(quoteline);
      }
 });
 app.get("/nntaleb",(req, res) => {
