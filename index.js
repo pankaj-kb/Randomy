@@ -5,7 +5,7 @@ let port = process.env.PORT || 3000;
 app.get("/",(req, res) => {
      res.send
      {
-          console.log("Site is Running");
+          res.end("site is running");
      }
 });
 app.get("/naval",(req, res) => {
