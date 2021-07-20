@@ -65,11 +65,11 @@ app.get("/seneca",(req, res) => {
           res.end(quoteline);
      }
 });
-app.get("/swamiV",(req, res) => {
+app.get("/swamiv",(req, res) => {
      res.send
      {
           const randomLines = require('random-status-lines');
-          const quoteline = randomLines.generateswamiV();
+          const quoteline = randomLines.generateswamiv();
           data = quoteline;
           res.end(quoteline);
      }
