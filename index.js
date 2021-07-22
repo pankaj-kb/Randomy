@@ -80,6 +80,15 @@ app.get("/swamiv",(req, res) => {
           res.end(quoteline);
      }
 });
+app.get("/rtagore",(req, res) => {
+     res.send
+     {
+          const randomLines = require('random-status-lines');
+          const quoteline = randomLines.generatertagore();
+          data = quoteline;
+          res.end(quoteline);
+     }
+});
 app.listen(port, () => {
      console.log(`app is running on port http://localhost:${port}`);
 });
