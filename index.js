@@ -94,7 +94,8 @@ app.get("/aboutnaval",(req, res) => {
      res.send
      {
           fs.readFile('aboutnaval.txt', 'utf8', function(about){
-               res.end(about);
+               about = aboutNaval
+               res.end(aboutNaval);
            });
      }
 });
