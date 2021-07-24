@@ -92,11 +92,10 @@ app.get("/rtagore",(req, res) => {
 app.get("/aboutnaval",(req, res) => {
      res.send
      {
-          fs.readFile('aboutnaval.txt', 'utf8', function(about){
-               console.log(about);
-               about = aboutNaval;
-               res.end(data);
-           });
+          const randomLines = require('random-status-lines');
+          const quoteline = randomLines.generateaboutnaval();
+          data = quoteline;
+          res.end(quoteline);
      }
 });
 app.listen(port, () => {
