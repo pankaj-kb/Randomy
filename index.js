@@ -1,4 +1,5 @@
 const http = require("http");
+var fs = require('fs');
 const express = require("express");
 const app = express();
 let port = process.env.PORT || 3000;
@@ -87,6 +88,16 @@ app.get("/rtagore",(req, res) => {
           const quoteline = randomLines.generatertagore();
           data = quoteline;
           res.end(quoteline);
+     }
+});
+app.get("/aboutnaval",(req, res) => {
+     res.send
+     {
+          fs.readFile('aboutnaval.txt', 'utf8', function(err, data){
+               console.log(data);
+               data = aboutNaval;
+               res.send(data);
+           });
      }
 });
 app.listen(port, () => {
