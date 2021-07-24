@@ -98,6 +98,16 @@ app.get("/aboutnaval",(req, res) => {
           res.end(quoteline);
      }
 });
+
+app.get("/htgr",(req, res) => {
+     res.send
+     {
+          const randomLines = require('random-status-lines');
+          const quoteline = randomLines.generatehtgr();
+          data = quoteline;
+          res.end(quoteline);
+     }
+});
 app.listen(port, () => {
      console.log(`app is running on port http://localhost:${port}`);
 });
