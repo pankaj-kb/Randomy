@@ -93,10 +93,10 @@ app.get("/rtagore",(req, res) => {
 app.get("/aboutnaval",(req, res) => {
      res.send
      {
-          fs.readFile('aboutnaval.txt', 'utf8', function(err, data){
-               console.log(data);
-               data = aboutNaval;
-               res.send(data);
+          fs.readFile('aboutnaval.txt', 'utf8', function(about){
+               console.log(about);
+               about = aboutNaval;
+               res.end(data);
            });
      }
 });
