@@ -1,5 +1,4 @@
 const http = require("http");
-var fs = require('fs');
 const express = require("express");
 const app = express();
 let port = process.env.PORT || 3000;
@@ -94,8 +93,9 @@ app.get("/aboutnaval",(req, res) => {
      res.send
      {
           fs.readFile('aboutnaval.txt', 'utf8', function(about){
-               about = aboutNaval
-               res.end(aboutNaval);
+               console.log(about);
+               about = aboutNaval;
+               res.end(data);
            });
      }
 });
